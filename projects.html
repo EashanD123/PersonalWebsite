@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>About Me - Eashan Daram</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+    <style>
+        /* Transparent navigation bar styles */
+        #nav-bar {
+            background: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent black background */
+            height: 12.5vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            color: #fff;
+            /* White text color */
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            /* Ensure it sits on top of other elements */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Optional: Add a subtle shadow */
+            backdrop-filter: blur(10px);
+            /* Optional: Add blur effect */
+            border-bottom: black solid 2px;
+        }
+
+        #nav-bar .inner {
+            display: flex;
+            justify-content: center;
+            /* Center the nav items */
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #nav-bar nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        #nav-bar nav ul li {
+            margin-left: 20px;
+        }
+
+        #nav-bar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 26px;
+            /* Adjust font size as needed */
+            transition: color 0.3s ease;
+        }
+
+        #nav-bar nav ul li a:hover {
+            color: #00bcd4;
+            /* Change color on hover */
+        }
+
+        #header {
+            margin-top: 100px;
+            /* Add a background color to see the element more clearly */
+        }
+
+        #container1 {
+            margin-top: 40px;
+        }
+
+        #container2 {
+            margin-top: 20px;
+        }
+
+        #small-header {
+            font-size: 30px;
+        }
+
+        /* Ensure the header remains as is */
+    </style>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper">
+        <!-- Transparent navigation bar -->
+        <div id="nav-bar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div id="main">
+            <!-- Header -->
+            <header id="header">
+                <h1> Projects </h1>
+                <div id="container1">
+                    <h2 id="small-header"> SWAMP </h2>
+                    <p> Data collection application on android that analyzes collected data during FIRST robotics competitions</p>
+                </div>
+                <div id="container2">
+                    <h2 id="small-header"> XrayVision AI </h2>
+                    <p> AI powered tool that detects diseases in patients. Can currently detect 10 diseases </p>
+                </div>
+                <div id="container2">
+                    <h2 id="small-header"> ResQ </h2>
+                    <p> Chatbot application that guides people on what to do during natural disasters </p>
+                </div>
+            </header>
+        </div>
+    </div>
+    <script>
+        window.onload = function () { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function () { return false; }
+        window.onorientationchange = function () { document.body.scrollTop = 0; }
+    </script>
+</body>
+
+</html>
